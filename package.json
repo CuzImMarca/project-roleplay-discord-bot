@@ -1,0 +1,29 @@
+{
+  "name": "oxbot",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "start:production": "pnpm build && pnpm start",
+    "dev": "nodemon -L"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.7",
+    "@types/node-fetch": "^2.6.4",
+    "concurrently": "^8.2.1",
+    "eslint": "^8.56.0",
+    "nodemon": "^3.0.1",
+    "prettier": "3.2.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.8.0",
+    "axios": "^1.6.5",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "prisma": "^5.8.0"
+  }
+}
